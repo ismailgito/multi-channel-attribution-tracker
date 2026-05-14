@@ -1,0 +1,193 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.logoSubtitle {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-card);
+  padding: 4px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.navItem:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+
+.navItem.active {
+  background: var(--gradient-1);
+  color: white;
+  box-shadow: 0 4px 12px var(--accent-blue-glow);
+}
+
+.navIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navIcon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.navLabel {
+  white-space: nowrap;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.statusText {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.main {
+  flex: 1;
+  overflow-x: hidden;
+}
+
+.footer {
+  padding: 20px 32px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.footer p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  .navItem {
+    padding: 8px 14px;
+  }
+
+  .navLabel {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .headerRight {
+    display: none;
+  }
+}

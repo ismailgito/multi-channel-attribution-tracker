@@ -1,0 +1,139 @@
+.container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table th:not(:first-child) {
+  text-align: right;
+}
+
+.table tbody {
+  background: transparent;
+}
+
+.row {
+  border-bottom: 1px solid var(--border-color);
+  transition: background var(--transition-fast);
+}
+
+.row:hover {
+  background: var(--bg-tertiary);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.numberCell {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.channelCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.channelDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  flex-shrink: 0;
+}
+
+.channelDot[data-index="0"] { background: #3b82f6; }
+.channelDot[data-index="1"] { background: #8b5cf6; }
+.channelDot[data-index="2"] { background: #10b981; }
+.channelDot[data-index="3"] { background: #f59e0b; }
+.channelDot[data-index="4"] { background: #ef4444; }
+
+.channelName {
+  font-weight: 500;
+}
+
+.roi {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.roiHigh {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.roiMedium {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.roiLow {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.roiNeutral {
+  background: var(--bg-tertiary);
+  color: var(--text-muted);
+}
+
+.empty {
+  padding: 40px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.skeletonRow {
+  display: flex;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-tertiary) 25%, var(--border-color) 50%, var(--bg-tertiary) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+.skeletonCell {
+  flex: 1;
+  height: 20px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
