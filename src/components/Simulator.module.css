@@ -460,3 +460,36 @@
   color: var(--text-muted);
   max-width: 300px;
 }
+
+@media (max-width: 768px) {
+  .simulator {
+    padding: 16px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .shiftVisual {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+  .arrow svg {
+    transform: rotate(90deg);
+  }
+  .impactGrid {
+    grid-template-columns: 1fr;
+  }
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+  .card, .resultCard {
+    padding: 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .formActions {
+    flex-direction: column;
+  }
+}

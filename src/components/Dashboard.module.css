@@ -258,3 +258,50 @@
 .tableWrapper {
   overflow-x: auto;
 }
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 16px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .headerRight {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .selectGroup {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .select {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  .navBtn {
+    white-space: nowrap;
+    padding: 8px 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .chartCard {
+    padding: 16px;
+  }
+  .tableHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px;
+  }
+}

@@ -441,3 +441,31 @@
   font-weight: 500;
   color: var(--text-secondary);
 }
+
+@media (max-width: 768px) {
+  .generator {
+    padding: 16px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .metadata {
+    grid-template-columns: 1fr;
+  }
+  .previewMeta {
+    grid-template-columns: 1fr;
+  }
+  .previewStats {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .formActions {
+    flex-direction: column;
+  }
+}

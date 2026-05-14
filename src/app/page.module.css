@@ -173,21 +173,26 @@
   .nav {
     order: 3;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-x: auto;
   }
 
   .navItem {
     padding: 8px 14px;
-  }
-
-  .navLabel {
-    display: none;
+    white-space: nowrap;
   }
 }
 
 @media (max-width: 640px) {
   .headerRight {
     display: none;
+  }
+  
+  .navLabel {
+    display: none;
+  }
+  
+  .logoTitle {
+    font-size: 16px;
   }
 }

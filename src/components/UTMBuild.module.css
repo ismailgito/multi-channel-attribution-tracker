@@ -293,3 +293,25 @@
   background: var(--accent-green);
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .builder {
+    padding: 16px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .paramsGrid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 16px;
+  }
+  .outputActions {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 24px;
+  }
+}
