@@ -105,6 +105,7 @@
 .navIcon svg {
   width: 18px;
   height: 18px;
+  stroke: currentColor;
 }
 
 .navLabel {
@@ -180,15 +181,12 @@
   .navItem {
     padding: 8px 14px;
     white-space: nowrap;
+    flex-shrink: 0;
   }
 }
 
 @media (max-width: 640px) {
   .headerRight {
-    display: none;
-  }
-  
-  .navLabel {
     display: none;
   }
   
