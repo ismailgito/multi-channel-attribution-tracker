@@ -133,7 +133,7 @@
 
 .navBtn.active {
   background: var(--gradient-1);
-  color: var(--text-primary);
+  color: white;
   box-shadow: 0 4px 12px var(--accent-blue-glow);
 }
 

@@ -406,11 +406,11 @@
   flex-shrink: 0;
 }
 
-.channelDot[data-index="0"] { background: #3b82f6; }
-.channelDot[data-index="1"] { background: #8b5cf6; }
-.channelDot[data-index="2"] { background: #10b981; }
-.channelDot[data-index="3"] { background: #f59e0b; }
-.channelDot[data-index="4"] { background: #ef4444; }
+.channelDot[data-index="0"] { background: var(--accent-blue); }
+.channelDot[data-index="1"] { background: var(--accent-purple); }
+.channelDot[data-index="2"] { background: var(--accent-green); }
+.channelDot[data-index="3"] { background: var(--accent-orange); }
+.channelDot[data-index="4"] { background: var(--accent-red); }
 
 .channelName {
   flex: 1;

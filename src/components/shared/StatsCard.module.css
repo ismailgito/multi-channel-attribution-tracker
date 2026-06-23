@@ -24,8 +24,8 @@
 
 .card:hover {
   border-color: var(--card-color);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl), 0 8px 20px -4px var(--card-bg);
 }
 
 .icon {
